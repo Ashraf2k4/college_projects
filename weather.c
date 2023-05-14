@@ -44,7 +44,7 @@ int main(void) {
         printf("Enter city name: ");
         scanf("%s", city);
 
-        snprintf(url, sizeof(url), "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=YOUR_APP_ID", city);
+        snprintf(url, sizeof(url), "http://api.openweathermap.org/data/2.5/weather?q=%s&appid=42190e80ce4c02cc96163befa31658f7", city);
 
         curl_easy_setopt(curl, CURLOPT_URL, url);
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writeMemoryCallback);
